@@ -8,7 +8,7 @@ Install the required Python packages.
 
 Follow the instructions to set up the Google Calendar API connection: https://developers.google.com/calendar/api/quickstart/python
 
-Run:
+Run in the terminal:
 ``python3 sync.py CALENDAR_ID``
 and replace CALENDAR_ID with the calendar you want to add the events to.
 
