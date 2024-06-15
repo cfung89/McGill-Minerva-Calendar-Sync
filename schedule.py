@@ -108,8 +108,9 @@ def getSchedule(semester):
                     'recurrence': [f'RRULE:FREQ=WEEKLY;UNTIL={end_date}', ],
                 }
 
-                print("Event", event)
-                events.append(event)
+                if event not in events:
+                    print("Event", event)
+                    events.append(event)
 
     return events
 
@@ -119,8 +120,8 @@ def main():
     events = getSchedule(semester="202409")
     events.extend(getSchedule(semester="202501"))
 
-    with open('data/schedule.json', 'w', encoding='utf-8') as f:
-        json.dump(events, f, ensure_ascii=False, indent=4)
+    # with open('data/schedule.json', 'w', encoding='utf-8') as f:
+    #     json.dump(events, f, ensure_ascii=False, indent=4)
 
     return events
 
