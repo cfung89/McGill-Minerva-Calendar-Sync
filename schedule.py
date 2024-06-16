@@ -102,8 +102,8 @@ def getSchedule(semester):
                 event = {
                     'summary': f"{code} - {name} ({course_type})",
                     'description': f"Location: {location}",
-                    'start': { 'dateTime': f"{start}", 'timeZone': 'EST' },
-                    'end': { 'dateTime': f"{end}", 'timeZone': 'EST' },
+                    'start': { 'dateTime': f"{start}", 'timeZone': 'America/Montreal' },
+                    'end': { 'dateTime': f"{end}", 'timeZone': 'America/Montreal' },
                     'reminders': { 'useDefault': True },
                     'recurrence': [f'RRULE:FREQ=WEEKLY;UNTIL={end_date}', ],
                 }
