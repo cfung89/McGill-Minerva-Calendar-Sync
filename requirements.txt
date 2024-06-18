@@ -28,5 +28,5 @@ requests-oauthlib==2.0.0
 rsa==4.9
 soupsieve==2.5
 uritemplate==4.1.1
-urllib3==2.2.1
+urllib3==2.2.2
 zope.interface==6.4.post2
